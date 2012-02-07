@@ -9,30 +9,21 @@
 
 (function($){
 
-  $.fn.widgetName = function(fn, params) {
+  $.fn.widgetName = function(options) {
     $.each(this, function() {
 
       /* Private variables */
 
       var self = $(this);
 
-      if (fn == undefined)
-        initialize();
-      else if (fn == "publicFunctionName")
-        publicFunctionName(params);
-
-      /* Public functions (via fn parameter) */
-
-      function publicFunctionName(params) {
-      
-      }
+      initialize();
 
       /* Private functions */
 
       function initialize() {
 
       }
-    }
+    });
 
     /* Allow chaining */
 
